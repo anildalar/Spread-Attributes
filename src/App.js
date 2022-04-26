@@ -1,22 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) { //Formal Argument
   return (
     <div className="App">
+      <h1>{props.firstName}</h1>
+      <h1>{props.surname}</h1>
+      <h1>{props.addr}</h1>
+      <h1>{props.contact}</h1>
+      {console.log(props)}
+      {console.log(props.firstName)}
+      {console.log(props.surname)}
+      {console.log(props.addr)}
+      {console.log(props.contact)}
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
     </div>
   );
